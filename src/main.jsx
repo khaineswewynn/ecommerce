@@ -4,12 +4,14 @@ import App from './App.jsx'
 import './index.css'
 import './style.css'
 import { BrowserRouter } from 'react-router-dom'
-
+import { Provider } from './pages/Provider.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
- 
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
+    <Provider>
+         <BrowserRouter>
+        <App />
+        </BrowserRouter>
+    </Provider>
+   
     
   
 )
